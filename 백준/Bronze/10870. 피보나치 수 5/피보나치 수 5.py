@@ -1,11 +1,8 @@
-n = int(input())
+n2 = int(input())
 
-def fib(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fib(n-1) + fib(n-2)
-
-print(fib(n))
+def fib1(n1):
+    a , b = 0 , 1
+    for i in range(n1):
+        a,b = b,a + b
+    return a
+print(fib1(n2))
